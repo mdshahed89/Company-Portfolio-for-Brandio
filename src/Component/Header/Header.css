@@ -1,0 +1,47 @@
+.navs{
+    position: relative;
+    
+  }
+  .navs:hover::before{
+    width: 100%;
+  }
+  
+  .navs::before{
+    content: "";
+    position: absolute;
+    height: .1px;
+    width: 0%;
+    background: #fff;
+    bottom: -.2rem;
+    transition: .4s linear;
+  }
+  .active::before{
+    content: "";
+    position: absolute;
+    height: .1rem;
+    width: 100%;
+    background: #fff;
+    bottom: -.3rem;
+    transition: .4s linear;
+    /* width: 100%; */
+  }
+
+  .searchActive .header{
+    background-color: black;
+  }
+  
+  
+  .ssBox{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .nssBox{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  .nsmNav{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  .smNav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
